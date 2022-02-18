@@ -23,7 +23,7 @@ if(!$username = filter_input(INPUT_POST, 'name')) {
   $err[] = 'ユーザ名を記入してください。';
 }
 if(!$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL)) {
-  $err[] = 'メールアドレスを記入してください。';
+  $err[] = 'メールアドレスを正しく記入してください。';
 }
 $password = filter_input(INPUT_POST, 'password');
 // 正規表現 
